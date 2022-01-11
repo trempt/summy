@@ -120,7 +120,7 @@ jobs:
 
       # change the types to yours
       - name: Run sync multiple script
-        if: contains(env.TYPE, 'multiple')
+        if: contains(env.twitter, 'multiple')
         run: |
           python3 -m github_poster multiple --types "github, twitter" --github_user_name ${{ secrets.G_USER_NAME }} --twitter_user_name ${{ secrets.TWITTER_USER_NAME }} --year 2019-2021
 
